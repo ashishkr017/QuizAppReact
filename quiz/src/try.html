@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simplee</title>
+</head>
+<body>
+    <form onsubmit="fun(event)">
+    <input type="radio" name="gen" value="female"><label>Female</label>
+    <input type="radio" name="gen" value="male"><label>male</label>
+    <input type="radio" name="gen" value="other"><label>Other</label>
+    
+    <br>
+    <input type="submit">
+    </form>
+    <script>
+        function fun(event){
+            let g=event.target.gen.value;
+            alert("gender that u select "+g);
+        }
+    </script>
+</body>
+</html>
